@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/margin_20dp"
+    app:cardUseCompatPadding="true"
+    app:strokeColor="@color/greyDFDADA"
+    app:strokeWidth="0.5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/restaurant_card_iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_200"
+            android:background="@color/orange"
+            android:padding="@dimen/margin_10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/food"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/restaurant_favorite_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_10dp"
+            android:src="@drawable/ic_un_favorite_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/restaurant_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:textSize="@dimen/size_15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_card_iv"
+            tools:text="Tanoshii Sushi" />
+
+        <RatingBar
+            android:id="@+id/restaurant_rating_bar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="0.5"
+            app:layout_constraintBottom_toBottomOf="@+id/restaurant_name_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/restaurant_name_tv" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/greyDFDADA"
+            app:layout_constraintTop_toBottomOf="@+id/restaurant_name_tv" />
+
+        <TextView
+            android:id="@+id/restaurant_open_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:drawableStart="@drawable/ic_time"
+            android:drawablePadding="@dimen/margin_5dp"
+            android:textSize="@dimen/size_15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            tools:text="Open" />
+
+        <TextView
+            android:id="@+id/restaurant_distance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_10dp"
+            android:drawableStart="@drawable/ic_location"
+            android:padding="@dimen/margin_5dp"
+            android:textSize="@dimen/size_15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/restaurant_open_state_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/restaurant_open_state_tv"
+            tools:text="2302" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

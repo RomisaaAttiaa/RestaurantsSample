@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.chip.ChipGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/child_group_chips"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:singleSelection="true">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/best_match_chip"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/best_match_sort_option"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/newest_chip"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/newest_sort_option"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/rating_average_chip"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rating_average_sort_option"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/distance_chip"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/distance_sort_option"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/popularity_chip"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popularity_sort_option"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/average_price_chip"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/average_price_sort_option"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/delivery_costs_chip"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/delivery_costs_sort_option"
+        android:textColor="@color/black" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/minimum_cost_chip"
+        style="@style/Widget.MaterialComponents.Chip.Choice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minimum_cost_sort_option"
+        android:textColor="@color/black" />
+
+</com.google.android.material.chip.ChipGroup>
