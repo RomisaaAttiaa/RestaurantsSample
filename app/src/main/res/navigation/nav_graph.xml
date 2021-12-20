@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/restaurantsFragment"
+        android:name="com.example.justeattakeawayapplication.presentation.restaurants.RestaurantsFragment"
+        android:label="restaurants_fragment"
+        tools:layout="@layout/restaurants_fragment" >
+        <action
+            android:id="@+id/action_restaurantsFragment_to_restaurantDetailFragment"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.justeattakeawayapplication.presentation.splash.SplashFragment"
+        android:label="splash_fragment"
+        tools:layout="@layout/splash_fragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_restaurantsFragment"
+            app:destination="@id/restaurantsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDetailFragment"
+        android:name="com.example.justeattakeawayapplication.presentation.restaurantdetails.RestaurantDetailsFragment"
+        android:label="RestaurantDetailFragment" >
+        <argument
+            android:name="restaurant"
+            app:argType="com.example.domain.model.Restaurant" />
+    </fragment>
+</navigation>
