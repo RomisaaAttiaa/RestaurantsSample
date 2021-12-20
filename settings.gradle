@@ -1,0 +1,5 @@
+rootProject.name = "JustEatTakeAwayApplication"
+include ':app'
+include ':domain'
+include ':data'
+

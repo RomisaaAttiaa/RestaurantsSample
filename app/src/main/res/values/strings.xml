@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Take Away</string>
+    <string name="best_match_sort_option">Best Match</string>
+    <string name="newest_sort_option">Newest</string>
+    <string name="rating_average_sort_option">Rating Average</string>
+    <string name="distance_sort_option">Distance</string>
+    <string name="popularity_sort_option">Popularity</string>
+    <string name="average_price_sort_option">Average Price</string>
+    <string name="delivery_costs_sort_option">Delivery Costs</string>
+    <string name="minimum_cost_sort_option">Minimum Cost</string>
+    <string name="application_logo_name">Take Away</string>
+    <string name="sort_by_label">Sort By</string>
+    <string name="restaurants_label">Restaurants</string>
+    <string name="details_label">Details</string>
+    <string name="error_title">Failure</string>
+    <string name="ok">OK</string>
+    <string name="popularity">%1$S popularity</string>
+    <string name="distance">%1$s km</string>
+    <string name="restaurant_details">This Restaurant %1$s  has best match %2$s , popularity %3$s , average product cost %4$s $ and min cost %5$s </string>
+    <string name="failure_in_favorite_restaurants">Failure in Favorite Restaurants</string>
+    <string name="failure_in_loading_restaurants">Failure in Loading Restaurants</string>
+</resources>
