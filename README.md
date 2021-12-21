@@ -1,5 +1,5 @@
 # TakeAway Application Sample
-This is a sample Application for showing list of restaurants and their details, that implements clean architecture MVVM/MVI using Kotlin, coroutines, Hilt, Room, navigation component 
+This is a sample Application for showing list of restaurants and their details, that implements clean architecture MVVM/MVI using Kotlin, coroutines, Hilt, Retrofit, Room, navigation component 
 and architecture components with unit tests using Junit 4 and Mockk.
 
 <img src="app/screenshots/splash.jpg" width="250"> <img src="app/screenshots/restaurants.jpg" width="250"> <img src="app/screenshots/restaurant_details.jpg" width="250"> 
